@@ -4,7 +4,7 @@ Content-Type: application/json
 {
     "username": "adminhung2",
     "password": "1234562",
-    "email": "admin2@gmail.com"
+    "email": "adminhungdeptrai@gmail.com"
 }
 
 ###
@@ -12,8 +12,42 @@ POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "adminhung",
-    "password": "123456"
+    "username": "adminhung2",
+    "password": "1234562"
+}
+
+
+
+###
+POST http://localhost:5000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZjMGJiMTJiMWVjM2YxOWIwZDcwMmQiLCJpYXQiOjE2OTQyMzk2NzN9.HhaPI_m8ynP7gK_9AtJFrA_BEWxLgoutrOrGDaAcDrQ
+
+
+{
+    "status": "Hom nay troi khong dep lam !",
+    "url": "fb.com/voviethung.it"
 }
 
 ###
+GET http://localhost:5000/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZiMGYwMjhlNTM5YzAwNGVlMTkyZmQiLCJpYXQiOjE2OTQyMzk4MzV9.vwuq3MdJb43QaEs5j6RJ148Zk-7ADadaXop5-TJJp7A
+
+
+###
+PUT http://localhost:5000/api/post/64fc0bce2b1ec3f19b0d7030
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZjMGJiMTJiMWVjM2YxOWIwZDcwMmQiLCJpYXQiOjE2OTQyMzk2NzN9.HhaPI_m8ynP7gK_9AtJFrA_BEWxLgoutrOrGDaAcDrQ
+
+{
+    "status": "Hom nay troi khong dep lam updated!",
+    "url": "fb.com/benzdapoet"
+}
+
+
+
+###
+DELETE http://localhost:5000/api/post/64fc0b1f8a339a8eb2268b41
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZiMGYwMjhlNTM5YzAwNGVlMTkyZmQiLCJpYXQiOjE2OTQyMzk4MzV9.vwuq3MdJb43QaEs5j6RJ148Zk-7ADadaXop5-TJJp7A

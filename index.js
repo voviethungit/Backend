@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const authRouter = require("./routes/auth");
+const postRouter = require("./routes/post");
 
 // Khai báo database
 const connectDB = async () => {
@@ -23,6 +24,7 @@ app.use(cors());
 
 // API ROUTER
 app.use("/api/auth", authRouter);
+app.use("/api/post", postRouter);
 // API SERVER
 app.listen(process.env.PORT, () => {
   console.log(
